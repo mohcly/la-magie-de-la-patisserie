@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>La Magie de la Pâtisserie - Le Tiramisu Parfait</title>
+<link rel="icon" type="image/png" href="tiramisu_mouse_logo_1777153298283.png"/>
+<link rel="shortcut icon" href="tiramisu_mouse_logo_1777153298283.png"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&amp;family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Scripts -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#fed0c1",
+                        "inverse-on-surface": "#f5f1e0",
+                        "inverse-surface": "#323126",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-tint": "#745853",
+                        "on-primary-fixed-variant": "#5b403c",
+                        "secondary": "#79564b",
+                        "outline": "#827472",
+                        "on-primary-fixed": "#2b1613",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e6e3d2",
+                        "on-tertiary-container": "#4e3d00",
+                        "on-secondary-container": "#79574c",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "on-surface": "#1d1c12",
+                        "surface-bright": "#fefae9",
+                        "surface": "#fefae9",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#2d150d",
+                        "on-background": "#1d1c12",
+                        "on-surface-variant": "#504442",
+                        "tertiary": "#735c00",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#5e3f35",
+                        "secondary-fixed-dim": "#e9bdae",
+                        "primary-container": "#3e2723",
+                        "primary": "#271310",
+                        "outline-variant": "#d3c3c0",
+                        "surface-container-high": "#ece8d8",
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#ae8d87",
+                        "primary-fixed-dim": "#e3beb8",
+                        "surface-container-low": "#f8f4e3",
+                        "background": "#fefae9",
+                        "on-tertiary-fixed": "#241a00",
+                        "primary-fixed": "#ffdad4",
+                        "tertiary-fixed": "#ffe088",
+                        "inverse-primary": "#e3beb8",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "surface-container-highest": "#e6e3d2",
+                        "surface-dim": "#dedaca",
+                        "tertiary-container": "#cba72f",
+                        "secondary-fixed": "#ffdbcf",
+                        "surface-container": "#f2eedd"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "display": ["Playfair Display", "serif"],
+                        "headline": ["Playfair Display", "serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #fefae9; color: #1d1c12; }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .arch-mask { clip-path: ellipse(80% 100% at 50% 100%); border-radius: 200px 200px 0 0; }
+        .soft-shadow { box-shadow: 0 40px 60px -20px rgba(39, 19, 16, 0.05); }
+        .text-balance { text-wrap: balance; }
+    </style>
+</head>
+<body class="selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-stone-50/70 dark:bg-stone-900/70 backdrop-blur-xl shadow-sm shadow-stone-900/5 transition-all duration-300">
+<div class="flex justify-between items-center w-full px-6 py-4 md:px-12 max-w-screen-2xl mx-auto">
+<a class="flex items-center space-x-3" href="index.html">
+<img alt="La Magie de la Pâtisserie Logo" class="w-12 h-12 object-cover rounded-full shadow-sm" src="tiramisu_mouse_logo_1777153298283.png"/>
+<span class="font-serif italic font-bold text-2xl text-stone-900 dark:text-stone-100">
+                La Magie de la Pâtisserie
+            </span>
+</a>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-stone-600 dark:text-stone-400 font-medium font-serif tracking-tight text-lg md:text-xl hover:text-stone-900 dark:hover:text-stone-100 transition-colors duration-300" href="anatomie.html">L'Anatomie</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium font-serif tracking-tight text-lg md:text-xl hover:text-stone-900 dark:hover:text-stone-100 transition-colors duration-300" href="formats.html">Nos Formats</a>
+<a class="text-stone-900 font-bold border-b-0 font-serif tracking-tight text-lg md:text-xl hover:text-stone-900 dark:hover:text-stone-100 transition-colors duration-300" href="index.html#commander">Commander</a>
+</div>
+<a href="index.html#commander" class="bg-primary text-on-primary px-8 py-2.5 rounded-xl font-serif italic text-lg hover:opacity-90 transition-all duration-200 shadow-lg shadow-primary/10">
+                Commander
+</a>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex flex-col items-center justify-center px-6 overflow-hidden">
+<div class="max-w-screen-2xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 z-10 space-y-8">
+<h1 class="font-serif text-6xl md:text-8xl lg:text-9xl font-black text-primary leading-tight tracking-tighter text-balance">
+                        Le Tiramisu <span class="italic font-normal block">Parfait.</span>
+<span class="text-3xl md:text-4xl block mt-4 font-body font-light tracking-widest uppercase">Rien d'autre.</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-lg leading-relaxed font-light">
+                        Notre Cheffe diplômée consacre son art culinaire à une seule création. Un équilibre parfait entre café intense, mascarpone onctueux et cacao pur.
+                    </p>
+<div class="pt-6 flex flex-col sm:flex-row gap-4">
+<a href="#commander" class="bg-primary text-on-primary px-10 py-5 rounded-xl font-body font-bold text-lg text-center hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300">
+                            Commander mon Tiramisu
+</a>
+<a href="anatomie.html" class="bg-surface-container-highest text-primary px-10 py-5 rounded-xl font-body font-bold text-lg text-center hover:bg-surface-container transition-all">
+                            Découvrir le secret
+</a>
+</div>
+</div>
+<div class="lg:col-span-6 relative h-[500px] lg:h-[800px] w-full flex items-center justify-center">
+<div class="absolute inset-0 bg-secondary-container/20 rounded-full blur-[120px] scale-150"></div>
+<div class="relative w-full h-full arch-mask overflow-hidden soft-shadow">
+<img alt="Le Tiramisu Parfait" class="w-full h-full object-cover transform hover:scale-105 transition-duration-700 transition-all" data-alt="Close-up of a luxurious tiramisu with dusted cocoa powder on top, creamy layers visible, soft warm studio lighting, elegant presentation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9IP8ArvJ51aUQVBrlTGZM3ocndgeFL5l_wd69MiGkR2g0VRH-WZErAavNAksaOFjok0ZQ-yCs_4iqbAlMtCn_z17MhVWZ3-2jaqFzNpk1H1x_zOSwdUmhRMQBkbQ1Tql1uwlTpYaE7OhOt7eCVSBGGu2d720OQ7yh4i1CDo-PODqT_q3DM2v49WIaeC0zsJX5QzNrSDl1Lw2a3eNMDdUrQQriZ59IsEmCGCCW3O7D7HCw7A43srZf9MQxUoNQUvI07ryFyPKrvi0"/>
+</div>
+</div>
+</div>
+</section>
+<!-- L'Anatomie du Plaisir -->
+<section class="py-24 md:py-40 bg-surface-container-low transition-colors duration-500" id="anatomie">
+<div class="max-w-screen-2xl mx-auto px-6 md:px-12">
+<div class="mb-20 space-y-4">
+<span class="text-tertiary font-body font-bold tracking-[0.3em] uppercase text-sm italic">Savoir-faire</span>
+<h2 class="font-serif text-5xl md:text-7xl text-primary">L'Anatomie du Plaisir</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="group space-y-6 flex flex-col">
+<div class="h-[450px] overflow-hidden rounded-xl bg-surface-container-highest shadow-sm">
+<img alt="Biscuit Cuillère" class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Homemade ladyfinger biscuits being dusted with sugar, golden brown texture, warm bakery lighting, macro photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHAIRuFj07uCsrHmLb-7KF5dpwz0B4wMJEwuiUwkln-JrFSiDwnlqXAkj1PwJWYpMF-U7BEsffJEro9e7iqQQ8yezZU0-3dOJ5CU_DqtR_p2CkiBYfXDwVwRNgLOBuEFFaeuOKQkjzgmoeFynoDEFveKb4WHnOrWsgzBN0CfQueFw2Zj86n2vYbFYzziTBA9WvKG6oeYBB7CIzg7otAFWsyYcakPg2MEad-HFj_zHuZ0iC-Mh7RVT0aBXb_84MRXYaYMFH0y5q7OU"/>
+</div>
+<div class="space-y-3 flex-1 flex flex-col">
+<h3 class="font-serif text-2xl text-primary font-bold">1. Biscuit Cuillère Maison</h3>
+<p class="text-on-surface-variant font-light leading-relaxed flex-1">Une base aérienne, pochée à la main chaque matin, pour une absorption optimale du café sans jamais s'affaisser.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group space-y-6 md:mt-12 flex flex-col">
+<div class="h-[450px] overflow-hidden rounded-xl bg-surface-container-highest shadow-sm">
+<img alt="Café Grand Cru" class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Rich dark espresso being poured into a ceramic bowl, steam rising, deep roasted coffee beans in background, dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMAepgLomHhepaHRLt2_aHvyCGsKJ6vBTKswNyTVa-vBtrm0UoAiemJe6kdkMYlr9mzEDb6WT4Bwo3BpZI9FrIKBTHWiz4XZdLe9ETcC2fH3DAQFr1VG5LX07nvjP-CzqZ7tZ0CFqWgqCPS_pGfBedgF4ImfBaXiGUXRwnGs7x3WF32PLTNTPLSlraBM6vYXhbypTVfbV5aFoFtCMgSUp4KfT7Mf01oOYba01VfT9OcBumI_byjrLrPq1lQTTxFTfl5Jk7P7Od_I8"/>
+</div>
+<div class="space-y-3 flex-1 flex flex-col">
+<h3 class="font-serif text-2xl text-primary font-bold">2. Café Grand Cru</h3>
+<p class="text-on-surface-variant font-light leading-relaxed flex-1">Un assemblage exclusif d'Arabicas d'altitude, torréfié lentement pour révéler des notes de noisette et de chocolat noir.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group space-y-6 md:mt-24 flex flex-col">
+<div class="h-[450px] overflow-hidden rounded-xl bg-surface-container-highest shadow-sm">
+<img alt="Crème Mascarpone" class="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" data-alt="Whipped mascarpone cream in a glass bowl, silky smooth texture, soft natural light, minimalist elegant aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiJunb1DdTI45MYbd7cSQT4Gzpe53mxYJuTrSejIoGzBIiYRpDz3kMs2h02yjpiM7MMrdxweUOEiEMJFb04oByooUo0NxI6b-hpkgL7uYROrTb7_e5-vpMMQItbJL6afCQf8dVLDo4iWhUc8_UDkZ03-yg-4ckWFx_RTiGP-AgIaoEb6topaFUDLu-ZXe1pAEc2qT1chEHByhiZyPkVKjHfRwlPrPM4WA11JCx-hQYS9MdUgonpXrTjkRUDo3W_vUlD5c2U1roCHU"/>
+</div>
+<div class="space-y-3 flex-1 flex flex-col">
+<h3 class="font-serif text-2xl text-primary font-bold">3. Crème Mascarpone Légère</h3>
+<p class="text-on-surface-variant font-light leading-relaxed flex-1">Une onctuosité incomparable obtenue par un foisonnement délicat, sans aucun artifice. Juste la pureté du goût.</p>
+</div>
+</div>
+</div>
+<div class="mt-16 text-center">
+    <a href="anatomie.html" class="inline-flex items-center gap-2 text-primary font-serif italic text-xl hover:text-tertiary transition-colors border-b border-primary/20 pb-1">En savoir plus sur notre recette secrète <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+</section>
+<!-- Nos Formats -->
+<section class="py-24 md:py-40 bg-surface" id="formats">
+<div class="max-w-screen-2xl mx-auto px-6 md:px-12 flex flex-col items-center">
+<div class="text-center mb-20 space-y-4 max-w-2xl">
+<h2 class="font-serif text-5xl md:text-7xl text-primary">Nos Formats</h2>
+<p class="text-on-surface-variant font-light text-lg italic">Une expérience adaptée à chaque instant de vie.</p>
+</div>
+<div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-12">
+<!-- Egoiste -->
+<div class="bg-surface-container-lowest p-10 rounded-xl flex flex-col items-center text-center space-y-8 soft-shadow transform hover:-translate-y-2 transition-all">
+<div class="w-24 h-24 rounded-full bg-secondary-container/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-secondary">person</span>
+</div>
+<div class="space-y-4">
+<h3 class="font-serif text-3xl font-bold text-primary italic">Format Simple</h3>
+<p class="text-on-surface-variant uppercase tracking-widest text-xs font-bold">Format Individuel</p>
+<p class="text-on-surface-variant font-light">Le plaisir solitaire, sans compromis. Un format généreux pour une pause hors du temps.</p>
+</div>
+<p class="text-2xl font-serif text-primary">3000 FCFA</p>
+</div>
+<!-- En Famille -->
+<div class="bg-primary p-12 rounded-xl flex flex-col items-center text-center space-y-8 shadow-2xl shadow-primary/30 transform hover:-translate-y-2 transition-all relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4">
+<span class="bg-tertiary text-on-tertiary px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest">Le Plus Prisé</span>
+</div>
+<div class="w-24 h-24 rounded-full bg-white/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-white">groups</span>
+</div>
+<div class="space-y-4">
+<h3 class="font-serif text-3xl font-bold text-white italic">Format Gourmand</h3>
+<p class="text-on-primary-container uppercase tracking-widest text-xs font-bold">4 - 6 Personnes</p>
+<p class="text-white/80 font-light">À partager (ou pas). Présenté dans un plat artisanal, idéal pour clore un dîner en beauté.</p>
+</div>
+<p class="text-3xl font-serif text-white">5000 FCFA</p>
+</div>
+<!-- Sur Mesure -->
+<div class="bg-surface-container-lowest p-10 rounded-xl flex flex-col items-center text-center space-y-8 soft-shadow transform hover:-translate-y-2 transition-all">
+<div class="w-24 h-24 rounded-full bg-secondary-container/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-secondary">celebration</span>
+</div>
+<div class="space-y-4">
+<h3 class="font-serif text-3xl font-bold text-primary italic">Sur Mesure</h3>
+<p class="text-on-surface-variant uppercase tracking-widest text-xs font-bold">Événementiel</p>
+<p class="text-on-surface-variant font-light">Mariages, réceptions, ou grandes tablées. Nous créons le format qui sublimera votre événement.</p>
+</div>
+<p class="text-xl font-serif text-primary italic">Sur Devis</p>
+</div>
+</div>
+<div class="mt-16">
+    <a href="formats.html" class="inline-flex items-center gap-2 text-primary font-serif italic text-xl hover:text-tertiary transition-colors border-b border-primary/20 pb-1">Voir tous nos formats en détail <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+</section>
+<!-- Passer Commande -->
+<section class="py-24 md:py-40 bg-surface-container overflow-hidden" id="commander">
+<div class="max-w-screen-2xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="space-y-12">
+<div class="space-y-4">
+<h2 class="font-serif text-5xl md:text-7xl text-primary">Passer Commande</h2>
+<p class="text-xl text-on-surface-variant font-light italic">"Préparé à la commande pour une fraîcheur absolue."</p>
+</div>
+<div class="space-y-8">
+<div class="flex gap-6 items-start">
+<span class="text-4xl font-serif text-tertiary italic font-bold">01.</span>
+<div>
+<h4 class="font-bold text-xl text-primary mb-2">Choisissez votre format</h4>
+<p class="text-on-surface-variant font-light">Sélectionnez la taille qui correspond à votre envie parmi nos créations signatures.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<span class="text-4xl font-serif text-tertiary italic font-bold">02.</span>
+<div>
+<h4 class="font-bold text-xl text-primary mb-2">Contactez-nous par WhatsApp</h4>
+<p class="text-on-surface-variant font-light">Une relation directe pour un service personnalisé. Envoyez-nous simplement un message.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<span class="text-4xl font-serif text-tertiary italic font-bold">03.</span>
+<div>
+<h4 class="font-bold text-xl text-primary mb-2">Retrait ou Livraison</h4>
+<p class="text-on-surface-variant font-light">Retirez votre commande à l'atelier ou profitez de notre livraison soignée à domicile.</p>
+</div>
+</div>
+</div>
+<div class="pt-8">
+<a class="inline-flex items-center gap-4 bg-[#25D366] text-white px-10 py-6 rounded-xl font-bold text-lg hover:shadow-xl transition-all" href="https://wa.me/22373111634" target="_blank">
+<span class="material-symbols-outlined">chat</span>
+                    Lancer la commande sur WhatsApp
+                        </a>
+</div>
+</div>
+<div class="relative">
+<div class="bg-surface-container-highest p-4 rounded-[4rem] rotate-3 arch-mask soft-shadow overflow-hidden">
+<img alt="Service" class="w-full h-full object-cover -rotate-3 scale-110" data-alt="Elegant serving of tiramisu on a ceramic plate, a silver spoon taking a bite, dark wood table, soft window light, premium food photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-9jbkNte7WlxbGxx_1JzyspOOayBT_IWLOiRaAd0rMZlqpXE-u2qTPcslIZTnMvf38pj4IHBSStEQNEOzP0-9chIfH9b7Lt9FDb7v-3TLDabQgzouVwTGec9-EmkkIyYGcjDNcaDDIyTCLoy1e3UehOsCM9sRpqXyYyYri7-hbFlMhQF1wkz2mkQjdX-50FC-bfhkYHgTmLZXIHaWoeRBvw0UNA2EQgB44OJWs3aPW5ip8zGpud0l82ewBxldlRtORNgvbviRYEU"/>
+</div>
+<div class="absolute -bottom-10 -left-10 bg-surface-container-lowest p-8 rounded-2xl soft-shadow max-w-[240px] hidden md:block">
+<p class="font-serif italic text-primary text-xl">"Le meilleur tiramisu que j'ai goûté en dehors de l'Italie."</p>
+<p class="mt-4 font-bold uppercase tracking-widest text-[10px] text-secondary">Marc A. - Client fidèle</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-6 md:px-12 bg-stone-100 dark:bg-stone-950 tonal-shift-no-border">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 max-w-screen-2xl mx-auto">
+<div class="space-y-4">
+<div class="font-serif italic text-3xl text-stone-900 dark:text-stone-100 font-bold">La Magie de la Pâtisserie</div>
+<p class="text-stone-500 dark:text-stone-400 font-sans text-sm tracking-wide uppercase">© 2024 La Magie de la Pâtisserie. La Curations des Saveurs Italienne.</p>
+</div>
+<div class="flex flex-wrap gap-8">
+<a class="text-stone-500 dark:text-stone-400 font-sans text-sm tracking-wide uppercase hover:text-stone-900 dark:hover:text-stone-100 underline underline-offset-4 transition-all duration-300" href="https://wa.me/22373111634" target="_blank">WhatsApp</a>
+<a class="text-stone-500 dark:text-stone-400 font-sans text-sm tracking-wide uppercase hover:text-stone-900 dark:hover:text-stone-100 underline underline-offset-4 transition-all duration-300" href="#">Instagram</a>
+<a class="text-stone-500 dark:text-stone-400 font-sans text-sm tracking-wide uppercase hover:text-stone-900 dark:hover:text-stone-100 underline underline-offset-4 transition-all duration-300" href="#">Mentions Légales</a>
+<a class="text-stone-500 dark:text-stone-400 font-sans text-sm tracking-wide uppercase hover:text-stone-900 dark:hover:text-stone-100 underline underline-offset-4 transition-all duration-300" href="index.html#commander">Contact</a>
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (Visible on Mobile, Hidden on Desktop) -->
+<nav class="md:hidden bg-[#ffffff]/80 backdrop-blur-2xl dark:bg-[#3e2723]/80 font-['Manrope'] text-[10px] uppercase tracking-[0.2em] font-semibold fixed bottom-0 w-full rounded-t-[2rem] z-50 shadow-[0_-10px_40px_rgba(39,19,16,0.08)] flex justify-around items-center px-6 pb-8 pt-4">
+<a class="flex flex-col items-center justify-center bg-[#f2eedd] dark:bg-[#271310] text-[#271310] dark:text-[#fefae9] rounded-full w-16 h-16 transition-all duration-500 hover:scale-110" href="index.html">
+<span class="material-symbols-outlined mb-1" data-icon="auto_awesome">auto_awesome</span>
+            Accueil
+        </a>
+<a class="flex flex-col items-center justify-center text-[#271310]/40 dark:text-[#fefae9]/40 hover:scale-110 transition-transform" href="anatomie.html">
+<span class="material-symbols-outlined mb-1" data-icon="menu_book">menu_book</span>
+            Anatomie
+        </a>
+<a class="flex flex-col items-center justify-center text-[#271310]/40 dark:text-[#fefae9]/40 hover:scale-110 transition-transform" href="formats.html">
+<span class="material-symbols-outlined mb-1" data-icon="straighten">straighten</span>
+            Formats
+        </a>
+<a class="flex flex-col items-center justify-center text-[#271310]/40 dark:text-[#fefae9]/40 hover:scale-110 transition-transform" href="index.html#commander">
+<span class="material-symbols-outlined mb-1" data-icon="local_mall">local_mall</span>
+            Commander
+        </a>
+</nav>
+</body>
+</html>
