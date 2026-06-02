@@ -4,13 +4,14 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>L'Anatomie du Plaisir - La Magie de la Pâtisserie</title>
-<link rel="icon" type="image/png" href="tiramisu_mouse_logo_1777153298283.png"/>
-<link rel="shortcut icon" href="tiramisu_mouse_logo_1777153298283.png"/>
+<link rel="icon" type="image/png" href="assets/logo.png"/>
+<link rel="shortcut icon" href="assets/logo.png"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&amp;family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -90,10 +91,10 @@
 </head>
 <body class="bg-surface text-on-surface antialiased min-h-screen flex flex-col pt-24 pb-24 md:pb-0 selection:bg-secondary-container selection:text-on-secondary-container">
 <!-- TopNavBar (Hidden on Mobile, Visible on Desktop) -->
-<nav class="hidden md:block fixed top-0 w-full z-50 bg-stone-50/70 dark:bg-stone-900/70 backdrop-blur-xl shadow-sm shadow-stone-900/5 transition-all duration-300">
+<nav class="hidden md:block fixed top-0 w-full z-50 glass-nav transition-all duration-300">
 <div class="flex justify-between items-center w-full px-6 py-4 md:px-12 max-w-screen-2xl mx-auto">
 <a class="flex items-center gap-3" href="index.html">
-<img alt="La Magie de la Pâtisserie Logo" class="object-cover rounded-full shadow-sm w-12 h-12" src="tiramisu_mouse_logo_1777153298283.png"/>
+<img alt="La Magie de la Pâtisserie Logo" class="object-cover rounded-full shadow-sm w-12 h-12" src="assets/logo.png"/>
 <span class="font-serif italic font-bold text-2xl text-stone-900 dark:text-stone-100">La Magie de la Pâtisserie</span>
 </a>
 <div class="hidden md:flex items-center space-x-10">
@@ -122,7 +123,7 @@
 </div>
 <div class="w-full md:w-1/2 relative">
 <div class="aspect-[4/5] rounded-t-full overflow-hidden bg-surface-container-low shadow-[0_40px_60px_-15px_rgba(39,19,16,0.05)]">
-<img alt="Tiramisu en coupe" class="w-full h-full object-cover transform hover:scale-105 transition-duration-700 transition-all" data-alt="A beautifully layered tiramisu dessert in a clear glass, showing distinct layers of mascarpone cream and espresso-soaked ladyfingers, soft natural lighting, elegant presentation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZjnxj0v4xBuRhxM0TQ-GfRUdyvFU3unLFX4Bv4mg8BA7aW6_swR4qEpf_o54zC9cLJZX7lNARKwGtrZ07CriHUfdPHcwXt7k-BVK8l_J3vpWp8Sb2St2BvS2LMkYpAIO7LuPxVId0CUZ_zXi45T8Ny5TRgOurSoXQXd8Be2IApwIzJ3_MaUeKDIUGrRqAz3-S1jrPcnNMlRBNOqExL_6YnkbJTyfty8uzq4qNGdN85OKgKN5CKG3ecg92ENH-MFTvoDMLsyKPyaI"/>
+<img alt="Tiramisu en coupe" class="w-full h-full object-cover transform hover:scale-105 transition-duration-700 transition-all" data-alt="A beautifully layered tiramisu dessert in a clear glass, showing distinct layers of mascarpone cream and espresso-soaked ladyfingers, soft natural lighting, elegant presentation" src="assets/tiramisu_coupe.jpg"/>
 </div>
 </div>
 </header>
@@ -130,7 +131,7 @@
 <section class="flex flex-col-reverse md:flex-row items-center gap-16 relative">
 <div class="w-full md:w-1/2">
 <div class="aspect-square rounded-[2rem] overflow-hidden bg-surface-container-highest shadow-[0_20px_40px_-10px_rgba(39,19,16,0.03)]">
-<img alt="Biscuits à la cuillère" class="w-full h-full object-cover transform hover:scale-105 transition-duration-700 transition-all" data-alt="Close up of freshly baked savoiardi ladyfinger biscuits dusted with powdered sugar on a dark textured surface, warm bakery lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDolrbPcIMYP9MyxbtHgglQ8kiNXVq3ELbHRzrXCfT-4WYToXLwcs4hGO2nT7HSy2Js-ALBsGlA2G_WzGLMxcI2XQIWM-2hjz57wDs6RL-AXJfauYq4MykSCB66RjQs5G3eWuMSKPyMTuCffInnFZMr4D7gBlbYr37VnRnFN2yxD2bd-ORws3lraxDJP_Z0ralCZObfO79KbQL2mpPXTlXvFdn1XWB133DxIgyB2WPRQYaDdj4XSKu0Tn7ZtY-DbNhicL5SQcu3KDU"/>
+<img alt="Biscuits à la cuillère" class="w-full h-full object-cover transform hover:scale-105 transition-duration-700 transition-all" data-alt="Close up of freshly baked savoiardi ladyfinger biscuits dusted with powdered sugar on a dark textured surface, warm bakery lighting" src="assets/biscuits_cuillere.jpg"/>
 </div>
 </div>
 <div class="w-full md:w-1/2 flex flex-col gap-4">
@@ -152,7 +153,7 @@
 </div>
 <div class="w-full md:w-1/2">
 <div class="aspect-[4/3] rounded-t-[4rem] rounded-b-xl overflow-hidden bg-surface-container-highest">
-<img alt="Extraction de café" class="w-full h-full object-cover transform hover:scale-105 transition-duration-700 transition-all" data-alt="Rich dark espresso coffee pouring into a ceramic cup, beautiful crema, moody lighting, dark background, artisanal coffee brewing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYELU12xpzeeBrt8ulVN-MtGQ7nvgef9QhKXXgP5EYJjKJ0w-jsE6sbHwEV_p8EKpM5HBZsn7vv9MevmXXIBAmArcWTjApjS7TVJnhsgRmoGu97CwD_B8hfX_fm0AR3BNMsFVeAjx_0RVEVMeNdbXp325OeQJJhG7hc-wS8gQXQumLID4Eq4nnR-i3LnCRPoqSI0PZ76g26LtJmLi_Ef_yNuFQycKvEQhOFFUf-kbq_NtZpNqxXRC6WiKPpJVgInpagMnMcTlU1eI"/>
+<img alt="Extraction de café" class="w-full h-full object-cover transform hover:scale-105 transition-duration-700 transition-all" data-alt="Rich dark espresso coffee pouring into a ceramic cup, beautiful crema, moody lighting, dark background, artisanal coffee brewing" src="assets/extraction_cafe.jpg"/>
 </div>
 </div>
 </section>
@@ -160,7 +161,7 @@
 <section class="flex flex-col-reverse md:flex-row items-center gap-16">
 <div class="w-full md:w-1/2">
 <div class="aspect-square rounded-full overflow-hidden bg-surface-container-highest shadow-[0_20px_40px_-10px_rgba(39,19,16,0.03)] border-8 border-surface">
-<img alt="Crème mascarpone" class="w-full h-full object-cover transform hover:scale-105 transition-duration-700 transition-all" data-alt="Close up of incredibly smooth, rich white mascarpone cream being whisked in a bowl, soft peaks, creamy texture, bright clean lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6y4u-rbVrbLXb51bLSSo9_Kk5Coeps0U8lcJzOvkfxQns-ouXZn0oMHib4iFfKYQ8YRBWq53t_BgqiGUCNQbjRqObcWqPMIg-luViN5FE1nrM2dWzywbjAznZL9C6d6VTNKAOjwuykRqvxYVDSvV5n55hZY1bU3Q8rv3-ztWXsqkpxEHRGBBn420y4hWkiepDu6s_-DQpVLtAZpB15kNdvkHDBBwIv-0uLvasUlZbtud1ngzR3wo4LJElqJGtIW4xVWEP_vAa0kM"/>
+<img alt="Crème mascarpone" class="w-full h-full object-cover transform hover:scale-105 transition-duration-700 transition-all" data-alt="Close up of incredibly smooth, rich white mascarpone cream being whisked in a bowl, soft peaks, creamy texture, bright clean lighting" src="assets/creme_mascarpone.jpg"/>
 </div>
 </div>
 <div class="w-full md:w-1/2 flex flex-col gap-4">

@@ -1,0 +1,91 @@
+/* Custom Styles for La Magie de la Pâtisserie - The Digital Curator */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface, #fefae9);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--outline-variant, #d3c3c0);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--outline, #827472);
+}
+
+/* Glassmorphism & Soft Transitions */
+.glass-nav {
+  background: rgba(254, 250, 233, 0.75) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(130, 116, 114, 0.1);
+}
+
+/* Custom rounded shapes and arch masking */
+.arch-mask {
+  clip-path: ellipse(80% 100% at 50% 100%);
+  border-radius: 200px 200px 0 0;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.arch-mask:hover {
+  transform: scale(1.03);
+}
+
+/* Smooth zoom on images */
+img {
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
+}
+
+/* Micro-animations and buttons */
+button, a {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Focus and active states */
+button:active, a:active {
+  transform: scale(0.98);
+}
+
+/* Shimmer Loading Skeleton */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-loading {
+  background: linear-gradient(90deg, #f2eedd 25%, #e6e3d2 50%, #f2eedd 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Interactive card elevations */
+.interactive-card {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.interactive-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 50px -10px rgba(39, 19, 16, 0.12);
+}
+
+/* Playfair Display Headline enhancements */
+.editorial-headline {
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
